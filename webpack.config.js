@@ -25,8 +25,8 @@ module.exports = {
         // Where and how will the files be formatted when they are output.
         path: buildOutputPath,
         publicPath: publicHost + '/assets/',
-        filename: '[name].[chunkhash].js',
-        chunkFilename: '[id].[chunkhash].js'
+        filename: '[name].[hash].js',
+        chunkFilename: '[id].[hash].js'
     },
     resolve: {
         // Avoid having to require files with an extension if they are here.
