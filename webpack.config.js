@@ -58,7 +58,7 @@ module.exports = {
         // Stop modules with syntax errors from being emitted.
         new webpack.NoErrorsPlugin(),
         // Ensure CSS chunks get written to their own file.
-        new ExtractTextPlugin('[name].[hash].css'),
+        new ExtractTextPlugin('[name].[chunkhash].css'),
         // Create the manifest file that Flask and other frameworks use.
         new ManifestRevisionPlugin(path.join('build', 'manifest.json'), {
             rootAssetPath: rootAssetPath,
